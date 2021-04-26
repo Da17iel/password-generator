@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #333131;
+}
+
+h1 {
+    padding-top: 5vh;
+}
+
+.content {
+    background-color: white;
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+    height: 96vh;
+    top: 2vh;
+    overflow-y: hidden;
+}
+
+.inner-content {
+    padding: 0 10vh 0 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.password-content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.password-content input {
+    background: none;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.password-field {
+    background-color: #272D2D;
+    color: #0582CA;
+
+    width: 100%;
+    height: 8vh;
+    min-height: 20px;
+    margin: 10px 0;
+
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.password-field input {
+    width: 80%;
+}
+
+.copy-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+button {
+    background-color: #272D2D;
+    border: solid 3px #272D2D;
+    height: 5vh;
+    width: 10vw;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    border: solid 3px #0582CA;
+}
+
+
+footer {
+    background-color: #4b4848;
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    min-height: 50px;
+    bottom: 0;
+}
+
+footer a:visited a:active a:link {
+    color: white; 
+}
+
+footer a {
+    color: white;
+    margin-left: 5vh;
+}
+
+footer a:hover {
+    color: #0582CA;
+}

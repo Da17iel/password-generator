@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylings/styling.css">
+    <title>Password generator</title>
+</head>
+<body>
+    <main class="content">
+        <div class="inner-content">
+            <h1>Password Generator</h1>
+            <div class="settings">
+                <h3>Password Settings</h3>
+                <p>Use Following characters for password:</p>
+
+                <input type="checkbox" id="symbols" onclick="ifchecked('symbols')" checked>
+                <label for="symbols">Symbols        ( @#$% )</label>
+                <br>
+                <input type="checkbox" id="Numbers" onclick="ifchecked('Numbers')" checked>
+                <label for="Numbers">Numbers        ( 123456 )</label>
+                <br>
+                <input type="checkbox" id="Lowercase-Characters" onclick="ifchecked('Lowercase-Characters')" checked>
+                <label for="Lowercase-Characters">Lowercase Characters  ( abcdefg )</label>
+                <br>
+                <input type="checkbox" id="Uppercase-Characters" onclick="ifchecked('Uppercase-Characters')" checked>
+                <label for="Uppercase-Characters">Uppercase Characters  ( ABCDEFG )</label><br><br>
+            
+                <button onclick="generate()">Generate</button>
+            </div>
+    
+
+    
+            <div class="password-content">
+                <div class="password-field">
+                    <input type="text" id="password-text" value="Sample Password">
+                </div>
+                <div class="copy-field">
+                    <button onclick="copy()">COPY</button>
+                </div>
+            </div>
+    
+
+        </div>
+        <footer>
+            <p><a href="https://github.com/Da17iel">Here is my GitHub</a></p>
+        </footer>
+    </main>
+
+    <script src="scripts/scrypt.js" language="javascript"></script>
+</body>
+</html>
