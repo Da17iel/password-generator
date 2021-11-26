@@ -77,11 +77,7 @@ function generate() {
     }
     if (PassArray != []) {
 
-
-        
         PasswordCreation()
-
-
         //PassArray = PassArray.toString();
         console.log(Password);
         document.getElementById("password-text").value = Password;
@@ -101,18 +97,18 @@ function PasswordCreation() {
 
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
-        
+
         // Generate random number
         var j = Math.floor(Math.random() * (i + 1));
-                        
+
         var temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
-            
+
     return array;
 }
-    
+
 
 function copy() {
     //select the element with the id "copyMe", must be a text box

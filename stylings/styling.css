@@ -16,6 +16,7 @@ h1 {
     height: 96vh;
     top: 2vh;
     overflow-y: hidden;
+    border-radius: 5px;
 }
 
 .inner-content {
